@@ -1,0 +1,21 @@
+n=int(input())
+a=0
+b=1
+while(n):
+    c=a+b
+    if(c>n):
+        d1=n-b
+        d2=c-n
+        if(d1>d2):
+            print(c)
+            break
+        elif(d1==d2):
+            print(b,end=" ")
+            print(c)
+            break
+        else:
+            print(b)
+            break
+    else:
+        a=b
+        b=c
