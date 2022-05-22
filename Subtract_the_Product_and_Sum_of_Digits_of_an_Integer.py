@@ -1,0 +1,9 @@
+a=int(input())
+pro=1
+add=0
+while(a):
+    r=a%10
+    pro*=r
+    add+=r
+    a//=10
+print(pro-add)
